@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
 import Footer from "@/components/Footer";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
